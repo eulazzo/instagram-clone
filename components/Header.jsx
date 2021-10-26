@@ -11,10 +11,11 @@ import {
   MenuIcon
 }from '@heroicons/react/outline'
 import {HomeIcon}from '@heroicons/react/solid'
+
 const Header = ()=> {
 
   return (
-    <div className='shadow-sm '>
+    <div className='shadow-sm border-b bg-white top-0 sticky z-100'>
       <div className='flex items-center  justify-between 
       max-w-6xl mx-5 lg:mx-auto'>
         
@@ -43,7 +44,7 @@ const Header = ()=> {
               <SearchIcon className='h-5 w-5 text-gray-500'/>
             </div>
             <input className='bg-gray-50 block w-full pl-10 
-            sm:text-sm border-gray-300 rounded-md 
+            border-gray-300 rounded-md 
             focus:ring-black focus:border-black' type="text" placeholder='Search' />
           </div>
         </div>
