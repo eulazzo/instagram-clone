@@ -1,6 +1,6 @@
 import React from 'react'
 import Stories from '../components/Stories'
- 
+import Posts from '../components/Posts'
 
 export default function Feed() {
   return (
@@ -10,6 +10,7 @@ export default function Feed() {
       
       <section className='col-span-1'>
         <Stories />
+        <Posts />
       </section>
          
     </main>
