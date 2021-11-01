@@ -4,8 +4,10 @@ import {
   DotsHorizontalIcon,
   EmojiHapyIcon,
   HeartIcon,
-  PaperAirPlaneIcon
+  PaperAirplaneIcon
 } from '@heroicons/react/outline'
+
+import {HeartIcon as HeartIconFilled} from '@heroicons/react/solid'
 
 export const Post = ({username,user_img,img,caption}) => {
    
@@ -19,10 +21,13 @@ export const Post = ({username,user_img,img,caption}) => {
 
       <img src={img} className='object-cover w-full' alt="" />
 
-      <div>
-        <HeartIcon />
-        <ChatIcon />
-        <PaperAirPlaneIcon />
+      <div className='flex justify-between px-4 pt-4'>
+        <div className='flex items-center space-x-4'>
+          <HeartIcon className='btnIcons'/>
+          <ChatIcon className='btnIcons' />
+          <PaperAirplaneIcon  className='btnIcons'/>
+        </div>
+        <BookmarkIcon className='btnIcons' />
       </div>
       
     </div>

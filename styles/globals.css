@@ -8,4 +8,8 @@
     hover:scale-125
     transition-all duration-150 ease-out
   }
+  .btnIcons{
+    @apply h-7 hover:scale-125 cursor-pointer
+    transition-all duration-150 ease-out
+  }
 }
