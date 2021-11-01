@@ -15,9 +15,9 @@ import {HeartIcon as HeartIconFilled} from '@heroicons/react/solid'
 const Header = ()=> {
 
   return (
-    <div className='shadow-sm border-b bg-white top-0 sticky z-50'>
+    <div className='shadow-sm border-b bg-white top-0 sticky z-50 '>
       <div className='flex items-center  justify-between 
-      max-w-6xl mx-5 lg:mx-auto'>
+      max-w-5xl mx-5 lg:mx-auto'>
         
         <div className='relative  hidden lg:inline-grid  
           h-24 w-24 cursor-pointer'> 

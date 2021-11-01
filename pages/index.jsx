@@ -10,9 +10,11 @@ export default function Home() {
         <title>instagram 2.0</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+ 
+     
       <Header />
       <Feed />
+      
     </div>
   );
 }
