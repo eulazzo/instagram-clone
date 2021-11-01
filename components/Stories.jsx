@@ -17,8 +17,8 @@ export default function Stories() {
   }, [ ])
   return (
     <div className='flex space-x-2  p-6 bg-white 
-    mt-5  border-gray-20 border rounded-sm 
-    overflow-x-scroll scrollbar-thin scrollbar-thumb-black'>
+    mt-5  border-gray-20 border rounded-sm mx-5 md:mx-0
+    overflow-x-scroll scrollbar-thin scrollbar-thumb-black '>
        {suggestions.map(({id,avatar,username})=> (
          <Story key={id} img={avatar}  username={username} />
        )

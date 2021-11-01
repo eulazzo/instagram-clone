@@ -18,25 +18,20 @@ const posts =  [
 ]
    
 
-
-
 const Posts = () => {
   return (
     <div>
-      {
-        posts.map(({id,username,user_img,caption, img}) => (
-          <Post key={id}
-            id={id}
-            username={username}
-            user_img={user_img}
-            caption={caption}
-            img={img}
-          />
-        ))
-      }
-
+      {posts.map(({id,username,user_img,caption, img}) => (
+        <Post key={id}
+          id={id}
+          username={username}
+          user_img={user_img}
+          caption={caption}
+          img={img}
+        />
+      ))}
     </div>
   );
 };
 
-export default Posts
+export default Posts  
