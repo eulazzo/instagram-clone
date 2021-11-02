@@ -15,7 +15,15 @@ export default NextAuth({
   },
   callbacks:{
     async session({session,token,user}){
+      session.user.username = session.user.name
+      .split(' ')
+      .join('')
+      .toLocaleLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, "");
       
+      session.user.uid = token.sub
+
+      return session
     }
   }
 })

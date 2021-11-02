@@ -11,9 +11,11 @@ import {
 import { HomeIcon } from "@heroicons/react/solid";
 
 import { signIn, signOut, useSession } from "next-auth/react";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const { data: session } = useSession();
+  const router = useRouter()
 
   return (
     <div className="shadow-sm border-b bg-white top-0 sticky z-50 ">
@@ -21,7 +23,7 @@ const Header = () => {
         className="flex items-center  justify-between 
       max-w-5xl mx-5 lg:mx-auto"
       >
-        <div
+        <div onClick={()=>router.push('/')}
           className="relative  hidden lg:inline-grid  
           h-24 w-24 cursor-pointer"
         >
@@ -32,7 +34,7 @@ const Header = () => {
           />
         </div>
 
-        <div
+        <div onClick={()=>router.push('/')}
           className="relative h-10 w-10 lg:hidden 
           flex-shrink-0 cursor-pointer"
         >
@@ -62,7 +64,7 @@ const Header = () => {
         </div>
 
         <div className="flex items-center justify-end space-x-4">
-          <HomeIcon className="navBtn" />
+          <HomeIcon onClick={()=>router.push('/')} className="navBtn" />
           <MenuIcon className="h-6 w-6 md:hidden cursor-pointer" />
 
           {session ? (
