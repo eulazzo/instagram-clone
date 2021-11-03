@@ -1,7 +1,7 @@
 import { HeartIcon as HeartIconFilled } from "@heroicons/react/solid";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
-
+import { format } from "timeago.js";
 import {
   BookmarkIcon,
   ChatIcon,
@@ -15,6 +15,7 @@ import {
   collection,
   onSnapshot,
   orderBy,
+  query,
   serverTimestamp,
 } from "@firebase/firestore";
 import { db } from "../firebase";
@@ -79,6 +80,30 @@ export const Post = ({ id, username, user_img, img, caption }) => {
         <span className="font-bold mr-1">{username} </span>
         {caption}
       </p>
+
+      {comments.length > 0 && (
+        <div className="ml-10 h-15 overflow-y-scroll scrollbar-thumb-black  scrollbar-thin">
+          {comments.map((comment) => (
+            <div key={comment.id} className="flex items-center space-x-2 mb-2">
+              <img
+                className="h-7 rounded-full"
+                src={comment.data().userImage}
+                alt=""
+              />
+              <p className="text-sm flex-1">
+                <span className="font-bold">{comment.data().username} </span>
+                {comment.data().comment}
+              </p>
+
+              {
+                <p className="pr-5 text-xs">
+                  {format(comment.data().timestamp?.toDate())}
+                </p>
+              }
+            </div>
+          ))}
+        </div>
+      )}
 
       {session && (
         <form className="flex items-center p-4">
