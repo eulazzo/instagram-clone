@@ -8,22 +8,7 @@ import {
   serverTimestamp,
 } from "@firebase/firestore";
 import { db } from "../firebase";
-const posts = [
-  {
-    id: "1",
-    username: "eulazzo",
-    user_img: "https://thispersondoesnotexist.com/image",
-    img: "https://thispersondoesnotexist.com/image",
-    caption: "This is D.O.P.E!",
-  },
-  {
-    id: "2",
-    username: "eulazzo",
-    user_img: "https://thispersondoesnotexist.com/image",
-    img: "https://thispersondoesnotexist.com/image",
-    caption: "This is D.O.P.E!",
-  },
-];
+ 
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
