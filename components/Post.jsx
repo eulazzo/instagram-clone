@@ -1,4 +1,4 @@
-import { HeartIcon as HeartIconFilled } from "@heroicons/react/solid";
+ 
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import { format } from "timeago.js";
@@ -13,17 +13,23 @@ import {
 import {
   addDoc,
   collection,
+  deleteDoc,
+  doc,
   onSnapshot,
   orderBy,
   query,
   serverTimestamp,
+  setDoc,
 } from "@firebase/firestore";
+import { HeartIcon as HeartIconFilled } from "@heroicons/react/solid";
 import { db } from "../firebase";
 
 export const Post = ({ id, username, user_img, img, caption }) => {
   const { data: session } = useSession();
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
+  const [likes, setLikes] = useState([]);
+  const [hasLiked, setHasLiked] = useState(false);
 
   useEffect(
     () =>
@@ -34,7 +40,35 @@ export const Post = ({ id, username, user_img, img, caption }) => {
         ),
         (snapshot) => setComments(snapshot.docs)
       ),
-    [db]
+    [db, id]
+  );
+
+  useEffect(
+    () =>
+      onSnapshot(collection(db, "posts", id, "likes"), (snapshot) => {
+        setLikes(snapshot.docs);
+      }),
+    [db, id]
+  );
+
+  //5horas e 12 min
+
+  const likePostHandler = async () => {
+    if (hasLiked) {
+      await deleteDoc(doc(db, "posts", id, "likes", session.user.uid));
+    } else {
+      await setDoc(doc(db, "posts", id, "likes", session.user.uid), {
+        username: session.user.username,
+      });
+    }
+  };
+
+  useEffect(
+    () =>
+      setHasLiked(
+        likes.findIndex((like) => like.id === session?.user.uid) !== -1
+      ),
+    [likes]
   );
 
   const commentHandler = async (event) => {
@@ -67,7 +101,14 @@ export const Post = ({ id, username, user_img, img, caption }) => {
       {session && (
         <div className="flex justify-between px-4 pt-4">
           <div className="flex items-center space-x-4">
-            <HeartIcon className="btnIcons" />
+            {hasLiked ? (
+              <HeartIconFilled
+                onClick={likePostHandler}
+                className="text-red-500 btnIcons"
+              />
+            ) : (
+              <HeartIcon onClick={likePostHandler} className="btnIcons" />
+            )}
             <ChatIcon className="btnIcons" />
             <PaperAirplaneIcon className="btnIcons" />
           </div>
@@ -77,6 +118,11 @@ export const Post = ({ id, username, user_img, img, caption }) => {
 
       {/* caption */}
       <p className="p-5 truncate">
+        {
+          likes.length >0 && (
+            <p className='font-bold mb-1 '>{likes.length} likes</p>
+          )
+        }
         <span className="font-bold mr-1">{username} </span>
         {caption}
       </p>
