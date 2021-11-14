@@ -1,29 +1,86 @@
-# Next.js + Tailwind CSS Example
+ <h1 align="center">
+  Instagram
+</h1>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
 
-## Preview
+## :camera: Before the user logs into the app:
+ ![SIGMA CHAT GIF](github/beforeLogin.gif)
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+# Instagram 2.0:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+<p>Instagram Clone</p>
+<p>Developed with ReactJS/NextJs, Firebase, Tailwind and Recoil.</p> 
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## :camera: See it:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+<h2>Login and Making a Comment</h2>
 
-## How to use
+![SIGMA CHAT GIF](github/loginAndMakingAcomment.gif)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+<h2>Making a post</h2>
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+![SIGMA CHAT GIF](github/making-a-post.gif)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+<h2>Leaving a Comment on a Post</h2>
+
+![SIGMA CHAT GIF](github/makingAComment.gif)
+
+## Getting started
+<ol>
+   <li>Clone this repo using <code> git@github.com:eulazzo/instagram-clone.git</code></li>
+   <li>Move yourself to the appropriate directory: <code>cd instagram-clone</code></li>
+   <li><code>Run npm install </code>to install dependencies</li>
+   <li>Create a <code>.env.local </code>  file and add the <code>GOOGLE_CLIENT_ID</code>,<code>GOOGLE_CLIENT_SECRET</code> from firebase and for <code>NEXTAUTH_URL= http://localhost:3000</code></li>
+</ol> 
+
+### Getting started with the frontend
+
+1. Run `npm start` or `yarn start` to start the web application <br>
+
+## :rocket: Technologies
+
+<table>
+   
+  <thead>
+    <th>Back-end</th>
+    <th>Front-end</th>
+  </thead>
+   
+  <tbody>
+    <tr>
+      <td>Firebase</td>
+      <td>ReactJS</td>
+    </tr>
+     <tr>
+      <td></td>
+      <td>next</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>tailwindcss</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Recoil</td>
+    </tr>
+   <tr>
+      <td></td>
+      <td>Prettier</td>
+    </tr>
+  </tbody>
+  
+</table>
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
+<!-- <h4>Techs:</h4>
+
+![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
+![image](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+
+  -->
+
+ 
