@@ -8,7 +8,7 @@
 
 
 
-## :camera: See it:
+## :camera: See the app's features:
 
 <h2>Login and Making a Comment</h2>
 
