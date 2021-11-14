@@ -3,12 +3,12 @@
 </h1>
 
 
-## :camera: Before the user logs into the app
+## :camera: Before the user logs into the app:
  ![SIGMA CHAT GIF](github/beforeLogin.gif)
 
-# Instagram 2.0
+# Instagram 2.0:
 
-<p>Clone of instagram<br>
+<p>Instagram Clone<br>
 <p>Developed with ReactJS/NextJs, Firebase, tailwind and recoil. </p> 
 
 
@@ -28,27 +28,14 @@
 
 ## Getting started
 
-1. Clone this repo using `git@github.com:eulazzo/socialmedia.git`
-2. Move yourself to the appropriate directory: `cd socialmedia`<br />
+1. Clone this repo using `git@github.com:eulazzo/instagram-clone.git`
+2. Move yourself to the appropriate directory: `cd instagram-clone`<br />
 3. Run `npm install` to install dependencies<br />
+4.Create a `.env.local` file and add the `GOOGLE_CLIENT_ID`,`GOOGLE_CLIENT_SECRET` and for `NEXTAUTH_URL= http://localhost:3000` 
 
 ### Getting started with the frontend
 
-1. Move yourself to the frontend folder: `cd client` <br>
-2. Run `npm start` or `yarn start` to start the web application <br>
-a window will open, but for the data show up, we have to start the back-end server
-
-### Getting started with the backend server
-
-1. Move yourself to the backend folder: `cd api`
-2. Create a `.env` file and add the MongoDB url connection in MONGO_URL field
-3. Now type yarn run dev, the server will start with nodemon<br>
-4. if you dont have yarn installed, type <code> npm install --global yarn </code> on terminal to install it or just use npm instead <br>
-
-### Getting started with Socket.io
-1. Move yourself to the socket io folder: `cd socket`
-2. Go to socket folder and type again <code>npm start</code> for the chat message works properly <br>
-3. now you are ready to create an account and login
+1. Run `npm start` or `yarn start` to start the web application <br>
 
 ## :rocket: Technologies
 
@@ -61,31 +48,23 @@ a window will open, but for the data show up, we have to start the back-end serv
    
   <tbody>
     <tr>
-      <td>Node.js</td>
+      <td>Firebase</td>
       <td>ReactJS</td>
     </tr>
      <tr>
-      <td>Socket.io</td>
-      <td>Socket.io</td>
+      <td></td>
+      <td>next</td>
     </tr>
     <tr>
-      <td>ExpressJs</td>
-      <td>CSS</td>
+      <td></td>
+      <td>tailwindcss</td>
     </tr>
     <tr>
-      <td>Axios</td>
-      <td>Axios</td>
+      <td></td>
+      <td>Recoil</td>
     </tr>
-    <tr>
-      <td>Nodemon</td>
-      <td>React Hooks</td>
-    </tr>
-    <tr>
-      <td>Cors</td>
-      <td>Eslint</td>
-    </tr>
-    <tr>
-      <td>Prettier</td>
+   <tr>
+      <td></td>
       <td>Prettier</td>
     </tr>
   </tbody>
