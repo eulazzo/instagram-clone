@@ -1,29 +1,105 @@
-# Next.js + Tailwind CSS Example
+ <h1 align="center">
+  Instagram
+</h1>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+## :camera: Before the user logs into the app
+ ![SIGMA CHAT GIF](github/beforeLogin.gif)
 
-## Preview
+# Instagram 2.0
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+<p>Clone of instagram<br>
+<p>Developed with ReactJS/NextJs, Firebase, tailwind and recoil. </p> 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-## Deploy your own
+## :camera: See it:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+<h2>Login and Making a Comment</h2>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+![SIGMA CHAT GIF](github/loginAndMakingAcomment.gif)
 
-## How to use
+<h2>Making a post</h2>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+![SIGMA CHAT GIF](github/making-a-post.gif)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+<h2>Leaving a Comment on a Post</h2>
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+![SIGMA CHAT GIF](github/makingAComment.gif)
+
+## Getting started
+
+1. Clone this repo using `git@github.com:eulazzo/socialmedia.git`
+2. Move yourself to the appropriate directory: `cd socialmedia`<br />
+3. Run `npm install` to install dependencies<br />
+
+### Getting started with the frontend
+
+1. Move yourself to the frontend folder: `cd client` <br>
+2. Run `npm start` or `yarn start` to start the web application <br>
+a window will open, but for the data show up, we have to start the back-end server
+
+### Getting started with the backend server
+
+1. Move yourself to the backend folder: `cd api`
+2. Create a `.env` file and add the MongoDB url connection in MONGO_URL field
+3. Now type yarn run dev, the server will start with nodemon<br>
+4. if you dont have yarn installed, type <code> npm install --global yarn </code> on terminal to install it or just use npm instead <br>
+
+### Getting started with Socket.io
+1. Move yourself to the socket io folder: `cd socket`
+2. Go to socket folder and type again <code>npm start</code> for the chat message works properly <br>
+3. now you are ready to create an account and login
+
+## :rocket: Technologies
+
+<table>
+   
+  <thead>
+    <th>Back-end</th>
+    <th>Front-end</th>
+  </thead>
+   
+  <tbody>
+    <tr>
+      <td>Node.js</td>
+      <td>ReactJS</td>
+    </tr>
+     <tr>
+      <td>Socket.io</td>
+      <td>Socket.io</td>
+    </tr>
+    <tr>
+      <td>ExpressJs</td>
+      <td>CSS</td>
+    </tr>
+    <tr>
+      <td>Axios</td>
+      <td>Axios</td>
+    </tr>
+    <tr>
+      <td>Nodemon</td>
+      <td>React Hooks</td>
+    </tr>
+    <tr>
+      <td>Cors</td>
+      <td>Eslint</td>
+    </tr>
+    <tr>
+      <td>Prettier</td>
+      <td>Prettier</td>
+    </tr>
+  </tbody>
+  
+</table>
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
+<!-- <h4>Techs:</h4>
+
+![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
+![image](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+
+  -->
+
+ 
