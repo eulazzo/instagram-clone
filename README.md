@@ -3,13 +3,14 @@
 </h1>
 
 
+
 ## :camera: Before the user logs into the app:
  ![SIGMA CHAT GIF](github/beforeLogin.gif)
 
 # Instagram 2.0:
 
-<p>Instagram Clone<br>
-<p>Developed with ReactJS/NextJs, Firebase, tailwind and recoil. </p> 
+<p>Instagram Clone</p>
+<p>Developed with ReactJS/NextJs, Firebase, Tailwind and Recoil.</p> 
 
 
 ## :camera: See it:
@@ -27,11 +28,12 @@
 ![SIGMA CHAT GIF](github/makingAComment.gif)
 
 ## Getting started
-
-1. Clone this repo using `git@github.com:eulazzo/instagram-clone.git`
-2. Move yourself to the appropriate directory: `cd instagram-clone`<br />
-3. Run `npm install` to install dependencies<br />
-4.Create a `.env.local` file and add the `GOOGLE_CLIENT_ID`,`GOOGLE_CLIENT_SECRET` and for `NEXTAUTH_URL= http://localhost:3000` 
+<ol>
+   <li>Clone this repo using <code> git@github.com:eulazzo/instagram-clone.git</code></li>
+   <li>Move yourself to the appropriate directory: <code>cd instagram-clone</code></li>
+   <li><code>Run npm install </code>to install dependencies</li>
+   <li>Create a <code>.env.local </code>  file and add the <code>GOOGLE_CLIENT_ID</code>,<code>GOOGLE_CLIENT_SECRET</code> and for <code>NEXTAUTH_URL= http://localhost:3000</code></li>
+</ol> 
 
 ### Getting started with the frontend
 
