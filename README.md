@@ -32,7 +32,7 @@
    <li>Clone this repo using <code> git@github.com:eulazzo/instagram-clone.git</code></li>
    <li>Move yourself to the appropriate directory: <code>cd instagram-clone</code></li>
    <li><code>Run npm install </code>to install dependencies</li>
-   <li>Create a <code>.env.local </code>  file and add the <code>GOOGLE_CLIENT_ID</code>,<code>GOOGLE_CLIENT_SECRET</code> and for <code>NEXTAUTH_URL= http://localhost:3000</code></li>
+   <li>Create a <code>.env.local </code>  file and add the <code>GOOGLE_CLIENT_ID</code>,<code>GOOGLE_CLIENT_SECRET</code> from firebase and for <code>NEXTAUTH_URL= http://localhost:3000</code></li>
 </ol> 
 
 ### Getting started with the frontend
