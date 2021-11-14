@@ -1,10 +1,9 @@
- <h1 align="center">
-  Instagram
+ 
+<h1 align="center">
+   <img alt="Implly" src="github/logo.svg" width="250px" />
 </h1>
 
 
-
-## :camera: Before the user logs into the app:
  ![SIGMA CHAT GIF](github/beforeLogin.gif)
 
 # Instagram 2.0:
