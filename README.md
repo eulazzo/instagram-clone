@@ -1,11 +1,29 @@
- 
 <h1 align="center">
-   <img alt="Implly" src="github/logo.svg" width="250px" />
+   <img alt="instagram" src="github/logo.svg" width="250px" />
 </h1>
 
+<div align="center">
+  <h1>Instagram - Instagram clone for educational purposes only</h1>
+</div>
 
- ![SIGMA CHAT GIF](github/beforeLogin.gif)
+<p align="center" >
+  <a href="#-sobre-a-aplica%C3%A7%C3%A3o"> Sobre </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-conteúdos-aplicados"> Conteúdos aplicados</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-suporte"> Suporte </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licen%C3%A7a">Licença</a>
+</p>
 
+<p align="center">
+  <a href="https://github.com/eulazzo" target="_blank">
+    <img src="https://img.shields.io/static/v1?label=author&message=eulazzo&color=400A14&labelColor=e1306c" alt="Github"> 
+  </a>
+  <img src="https://img.shields.io/github/stars/eulazzo/instagram-clone?color=400A14&labelColor=e1306c" alt="Stars">
+  <img src="https://img.shields.io/github/last-commit/eulazzo/instagram-clone?color=400A14&labelColor=e1306c" alt="Commits">
+  <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=400A14&labelColor=e1306c" alt="License">
+</p>
+ 
+![SIGMA CHAT GIF](github/beforeLogin.gif)
 
 
 ## :camera: See the app's features:
