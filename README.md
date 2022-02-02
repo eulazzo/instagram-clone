@@ -18,8 +18,8 @@
   <a href="https://github.com/eulazzo" target="_blank">
     <img src="https://img.shields.io/static/v1?label=author&message=eulazzo&color=400A14&labelColor=e1306c" alt="Github"> 
   </a>
-  <img src="https://img.shields.io/github/stars/eulazzo/instagram-clone?color=400A14&labelColor=e1306c" alt="Stars">
-  <img src="https://img.shields.io/github/last-commit/eulazzo/instagram-clone?color=400A14&labelColor=e1306c" alt="Commits">
+  <img src="https://img.shields.io/github/stars/eulazzo/instagramclone?color=400A14&labelColor=e1306c" alt="Stars">
+  <img src="https://img.shields.io/github/last-commit/eulazzo/instagramclone?color=400A14&labelColor=e1306c" alt="Commits">
   <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=400A14&labelColor=e1306c" alt="License">
 </p>
  
