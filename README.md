@@ -35,6 +35,12 @@ Application clone for educational purposes only
  
 <p>Developed with <code>Nextjs</code>, <code>NodeJs</code>,<code>Tailwindcss</code>,</br><code>Firebase</code>, <code>Recoil</code> </p> 
 
+#### Features:
+- Login (Firebase Authentication)
+- Post (Firebase Store)
+- Like a post
+- Comment
+
 ## App features so far
 
 ### Login and Making a Comment
