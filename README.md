@@ -7,7 +7,7 @@
 </div>
 
 <p align="center" >
-  <a href="#about"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+  <a href="#about-the-project"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
   <a href="#app-features-so-far">Gifs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#getting-started"> Getting Started</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#technologies"> Technologies </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
