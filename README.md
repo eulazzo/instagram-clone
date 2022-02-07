@@ -7,11 +7,11 @@
 </div>
 
 <p align="center" >
-  <a href="#-sobre-a-aplica%C3%A7%C3%A3o"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Techs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-conteúdos-aplicados"> Content</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-suporte"> Suport </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licen%C3%A7a">License</a>
+  <a href="#about"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+  <a href="#app-features-so-far">Gifs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#getting-started"> Getting Started</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#technologies"> Technologies </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#license">License</a>
 </p>
 
 <p align="center">
@@ -25,18 +25,27 @@
  
 ![SIGMA CHAT GIF](github/beforeLogin.gif)
 
+# About the project
 
-## :camera: See the app's features:
+### Instagram clone
 
-<h2>Login and Making a Comment</h2>
+<p>
+Application clone for educational purposes only
+</p>
+ 
+<p>Developed with <code>Nextjs</code>, <code>NodeJs</code>,<code>Tailwindcss</code>,</br><code>Firebase</code>, <code>Recoil</code> </p> 
+
+## App features so far
+
+### Login and Making a Comment
 
 ![SIGMA CHAT GIF](github/loginAndMakingAcomment.gif)
 
-<h2>Making a post</h2>
+### Making a post
 
 ![SIGMA CHAT GIF](github/making-a-post.gif)
 
-<h2>Leaving a Comment on a Post</h2>
+### Leaving a Comment on a Post
 
 ![SIGMA CHAT GIF](github/makingAComment.gif)
 
@@ -52,7 +61,7 @@
 
 1. Run `npm start` or `yarn start` to start the web application <br>
 
-## :rocket: Technologies
+## Technologies
 
 <table>
    
