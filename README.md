@@ -32,10 +32,28 @@
 <p>
 Application clone for educational purposes only
 </p>
- 
-<p>Developed with <code>Nextjs</code>, <code>NodeJs</code>,<code>Tailwindcss</code>,</br><code>Firebase</code>, <code>Recoil</code> </p> 
+<p>Developed with <code>Nextjs</code>, <code>NodeJs</code>,<code>Tailwindcss</code>,</br><code> Firebase v9</code>, <code>Recoil</code> <code>NextAuth</code> </p> 
 
-#### Features
+### What's Recoil ?
+<p>
+   Recoil is an state management librarie, like Redux or Context APIs. But Recoil unlike Redux is more easy to set up.
+   Created by <code>Dave McCabe</code>, recoil provides a global state so all components in a react application can share states easily and it is minimal compared to Redux with no boilerplate code setup needed.</br></br>
+   According to the official <a href="https://recoiljs.org/docs/introduction/core-concepts/">documentation</a> the two core concepts of recoil is <code>Atoms</code> and <code>Selector</code>.</br>
+   Atoms are units of the global stated provided by recoil, components can access and subscribe to changes made to them.
+   Selectors in other hands with them, we can transform states either synchronously or asynchronously, and components can also access and subscribe to.
+</p>
+
+### Why use Recoil ?
+<p>
+  In cases where Redux is not that necessary recoil has advantages as, for example, is a minimal and there are no boilerplate code to get started. Diferent from Redux that require write a ammount of code to set it up. Recoil just like Redux, provides a global state, with recoil we wont have to pass state as props down to childreen components in order to share them between components (a concept know as <code>prop drilling</code>)
+</p>
+
+### Recoil in this instagram clone
+<p>
+   So..in the header component when the user clicks on the <code>plus button</code> for upload an image. I need to be able to tell a global store that inside the app. I cant just have the plus button and then some state at the header level because doesn't work. If i do that, on the header level i will  have some state which means that if i click on the plus button to upload an image that state it is set to true so the modal is opened. So far so good, but firstly how do i go a level up? Because the header component is rendered on the Home component i can't lift state from the component. State is <code>one way thing</code>, it only go compoment and could pass down but we dont want to do that. For that reason, a global Store it's necessary. So...tipically the way it's works is if we had a "modal state" by default is gonna be false we dont want the modal to be opened all the time, when somebody clicks the litle plus icon on the header 
+</p>
+
+### Features
 - [X] Login (Firebase Authentication)
 - [X] Post (Firebase Store)
 - [X] Like a post
@@ -57,7 +75,7 @@ Application clone for educational purposes only
 
 ## Getting started
 <ol>
-   <li>Clone this repo using <code> git@github.com:eulazzo/instagram-clone.git</code></li>
+   <li>Clone this repo using  <code> git@github.com:eulazzo/instagram-clone.git</code></li>
    <li>Move yourself to the appropriate directory: <code>cd instagram-clone</code></li>
    <li><code>Run npm install </code>to install dependencies</li>
    <li>Create a <code>.env.local </code>  file and add the <code>GOOGLE_CLIENT_ID</code>,</br><code>GOOGLE_CLIENT_SECRET</code> from firebase and for <code>NEXTAUTH_URL= http://localhost:3000</code></li>
