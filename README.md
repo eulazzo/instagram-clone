@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-  <h1>Instagram - Instagram clone for educational purposes only</h1>
+  <h1>Instagram - For educational purposes only</h1>
 </div>
 
 <p align="center" >
